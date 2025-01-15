@@ -16,7 +16,7 @@ const Items = () => {
   const [selectCategory, setSelectCategory] = useState('allProducts')
   const [labelCategory, setLabelCategory] = useState('All Products')
 
-  const handlerSelect = (selected, label) => {
+  const handleSelect = (selected, label) => {
     setSelectCategory(selected)
     setLabelCategory(label)
   }
@@ -33,7 +33,7 @@ const Items = () => {
           <Navbar />
         </div>
 
-        <div className='content' style={{ paddingTop: `${navbarHeight + 12}px` }}>
+        <div className='content' style={{ marginTop: `${navbarHeight + 12}px` }}>
           <div className='row d-flex align-items-center justify-content-between py-3'>
 
             <div className='col-5 col-md-4 col-lg-4 addItem d-flex align-items-center px-0'>
@@ -41,28 +41,28 @@ const Items = () => {
               <NavLink to='addItem' className='mb-0  fs-5 '>Add Item</NavLink>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 dropdown px-0 allProductsMenu ">
+            <div className="col-6 col-md-4 col-lg-3 dropdown px-0 allProductsMenu ">
               <button className="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>{labelCategory}</span>
                 <FontAwesomeIcon icon={faChevronDown} size="1x" style={{color:'#979797'}}/> 
               </button>
 
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
                 <li>
-                  <button class="dropdown-item" onClick={() => handlerSelect('allProducts', 'All Products')} >All Products</button>
+                  <button className="dropdown-item" onClick={() => handleSelect('allProducts', 'All Products')} >All Products</button>
                 </li>
 
                 <li>
-                  <button class="dropdown-item" onClick={() => handlerSelect('sales', 'Sale')} >Sales</button>
+                  <button className="dropdown-item" onClick={() => handleSelect('sales', 'Sale')} >Sales</button>
                 </li>
 
                 <li>
-                  <button class="dropdown-item" onClick={() => handlerSelect('bouquets', 'Bouquets')}>Bouquets</button>
+                  <button className="dropdown-item" onClick={() => handleSelect('bouquets', 'Bouquets')}>Bouquets</button>
                 </li>
 
                 <li>
-                  <button class="dropdown-item" onClick={() => handlerSelect('plants', 'Plants')}>Indoor Plants</button>
+                  <button className="dropdown-item" onClick={() => handleSelect('plants', 'Plants')}>Indoor Plants</button>
                 </li>
 
               </ul>
@@ -71,9 +71,9 @@ const Items = () => {
           </div>
 
           <div className='row d-flex justify-content-sm-center justify-content-lg-start'>
-            <div class="searchInput col-sm-6 col-md-5 col-lg-3 d-flex align-items-center justify-content-between">
+            <div className="searchInput col-sm-6 col-md-5 col-lg-3 d-flex align-items-center justify-content-between">
               <FontAwesomeIcon icon={faMagnifyingGlass} size="1x" color="#979797" className='searchIcon ps-2' />
-              <input type="text" class="form-control" placeholder="Search Flower Types" />
+              <input type="text" className="form-control" placeholder="Search Flower Types" />
             </div>
           </div>
 

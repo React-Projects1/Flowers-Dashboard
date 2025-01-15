@@ -22,12 +22,12 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('resize', updateHeight);
         };
-    }, [setNavbarHeight]);
+    }, []);
     return (
 
-        <nav class="navbar p-3" ref={elementRef}>
-            <div class="container-fluid">
-                <a class="navbar-brand fs-4" href='#'>Items</a>
+        <nav className="navbar p-3" ref={elementRef}>
+            <div className="container-fluid">
+                <a className="navbar-brand fs-4" href='#'>Items</a>
                 <div className='col-3 mt-1 left d-flex gap-4 justify-content-end align-items-center'>
                     <div className='notifications'>
                         <span></span>

@@ -626,3 +626,21 @@ export const plants = {
 
     ],
 }
+
+export const menuData = [
+    {
+        id: 1,
+        title: 'Wallet History',
+        subItems: ['Wallet History 1', 'Wallet History 2', 'Wallet History 3'],
+    },
+    {
+        id: 2,
+        title: 'Users Wallets',
+        subItems: ['Users Wallets 1', 'Users Wallets 2', 'Users Wallets 3'],
+    },
+    {
+        id: 3,
+        title: 'Users Withdraw Requests',
+        subItems: ['Users Withdraw Requests 1', 'Users Withdraw Requests 2', 'Users Withdraw Requests 3'],
+    },
+];

@@ -40,7 +40,7 @@ const AddItem = () => {
                     <Navbar />
                 </div>
                 <div className="content px-0 px-md-3 px-lg-4 pb-4"
-                    style={{ paddingTop: `${navbarHeight + 12}px` }}>
+                    style={{ marginTop: `${navbarHeight + 12}px` }}>
                     <h4 className=' mb-lg-0'>Add new item</h4>
 
                     <form className="row g-4 m-0 d-flex justify-content-between align-items-center px-lg-5 mx-lg-5 ">
@@ -62,7 +62,7 @@ const AddItem = () => {
 
                         <div className="col-12 col-md-6 col-lg-5">
 
-                            <SelectColors selectedColors={selectedColors} onColorChange={setSelectedColors} />
+                            <SelectColors selectedColors={selectedColors} setSelectedColors={setSelectedColors} />
                         </div>
 
                         <div className="col-12 d-flex gap-3 mt-2 colors">
