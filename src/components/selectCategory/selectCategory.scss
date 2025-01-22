@@ -16,7 +16,10 @@
     }
     .dropdown-item{
         transform-style: preserve-3d; 
-        img{
+        .arrowLeft{
+            transform: rotate(90deg);
+        }
+        .arrowRight{
             transform: rotate(-90deg);
         }
     }

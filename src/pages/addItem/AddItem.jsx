@@ -7,8 +7,10 @@ import upload from '../../assets/icons/upload.png';
 import SelectColors from '../../components/selectColors/SelectColors';
 import SelectCategory from '../../components/selectCategory/SelectCategory.jsx';
 import { NavbarHeightContext } from '../../Context/NavbarHeightContext';
+import { useTranslation } from 'react-i18next';
 
 const AddItem = () => {
+    const [t, i18n] = useTranslation();
     const { navbarHeight = 0 } = useContext(NavbarHeightContext);
     const [showImg, setShowImg] = useState(false);
     const [urlImg, setUrlImg] = useState('');
@@ -41,19 +43,21 @@ const AddItem = () => {
                 </div>
                 <div className="content px-0 px-md-3 px-lg-4 pb-4"
                     style={{ marginTop: `${navbarHeight + 12}px` }}>
-                    <h4 className=' mb-lg-0'>Add new item</h4>
+                    <h4 className=' mb-lg-0'>{t('addNewItem')}</h4>
 
                     <form className="row g-4 m-0 d-flex justify-content-between align-items-center px-lg-5 mx-lg-5 ">
                         <div className="col-12 col-md-6 col-lg-5">
-                            <label htmlFor="inputName" className="form-label">Item Name
+                            <label htmlFor="inputName" className="form-label">{t('itemName')}
                                 <img src={star} alt='Star Icon' width='10px' /> </label>
-                            <input type="text" className="form-control" id="inputName" placeholder='exp: Tulips' />
+                            <input type="text" className="form-control" id="inputName" 
+                            placeholder={t('expTulips')} />
                         </div>
 
                         <div className="col-12 col-md-6 col-lg-5">
-                            <label htmlFor="inputPrice" className="form-label">Item Price
+                            <label htmlFor="inputPrice" className="form-label">{t('itemPrice')}
                                 <img src={star} alt='Star Icon' width='10px' /></label>
-                            <input type="text" className="form-control" id="inputPrice" placeholder='exp: $10' />
+                            <input type="text" className="form-control" id="inputPrice" 
+                            placeholder={t('exp10')} />
                         </div>
 
                         <div className="col-12 col-md-6 col-lg-5">
@@ -78,7 +82,7 @@ const AddItem = () => {
                         </div>
 
                         <div className="col-md-5 mb-0 mt-2">
-                            <label htmlFor="inputFile" className="form-label">Upload item photo
+                            <label htmlFor="inputFile" className="form-label">{t('uploadItemPhoto')}
                                 <img src={upload} alt='Star Icon' width='20px' className='d-inline-block ms-3' /></label>
                             <input type="file" className="form-control " id="inputFile" style={{ display: 'none' }} onChange={handelImg} />
                         </div>
@@ -90,7 +94,7 @@ const AddItem = () => {
                         </div>
 
                         <div className="col-12 d-flex justify-content-center ">
-                            <button type="submit" className="btn ">Save</button>
+                            <button type="submit" className="btn ">{t('save')}</button>
                         </div>
 
                     </form>

@@ -19,6 +19,9 @@ import flowerWooden from './assets/plants/flower-wooden.png'
 
 import sale from './assets/icons/sale.png'
 
+import arrow3 from './assets/icons/arrow3.png'
+import arrow4 from './assets/icons/arrow4.png'
+
 export const allProducts = [
     {
         id: 1,
@@ -642,5 +645,41 @@ export const menuData = [
         id: 3,
         title: 'Users Withdraw Requests',
         subItems: ['Users Withdraw Requests 1', 'Users Withdraw Requests 2', 'Users Withdraw Requests 3'],
+    },
+];
+
+export const cardData = [
+    {
+        id: 1,
+        title: 'Total Income',
+        icon:arrow3,
+        percentage: 16,
+        price:'$ 10,450',
+        backgroundColor: '#ffffff',
+        linearGradient: '#e3e2e0'
+    },
+    {
+        id: 2,
+        title: 'Profits',
+        icon: arrow4,
+        percentage: 1.5,
+        price: '$ 3,500',
+        backgroundColor: '#ffffff',
+        linearGradient: '#eda2a2'
+    },
+    {
+        id: 3,
+        title: 'New customers',
+        text: 'May 2024',
+        price: '20',
+        backgroundColor: '#ffffff',
+        linearGradient: '#e3e2e0'
+    },
+    {
+        id: 4,
+        title: 'Orders',
+        price: '72',
+        backgroundColor: '#ffffff',
+        linearGradient: '#eda2a2'
     },
 ];
