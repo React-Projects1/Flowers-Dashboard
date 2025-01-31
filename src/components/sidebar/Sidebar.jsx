@@ -22,6 +22,7 @@ const Sidebar = () => {
     test: '/test',
     reports: '/reports',
     users: '/users',
+    orders: '/orders',
   }
 
   const toggleSidebar = () => setShow(!show);
@@ -75,7 +76,7 @@ const Sidebar = () => {
                   <p className="mb-0">{t('users')}</p>
                 </Nav.Link>
 
-                <Nav.Link href="#pricing">
+                <Nav.Link as={NavLink} to={routs.orders}>
                   <img src={order} alt="Orders Icon" width='24px'
                     className={`${i18n.language !== 'ar' ? 'me-3' : 'ms-3'}`} />
                   <p className="mb-0">{t('orders')}</p>
@@ -143,7 +144,7 @@ const Sidebar = () => {
               <p className="mb-0">{t('users')}</p>
             </Nav.Link>
 
-            <Nav.Link href="#pricing">
+            <Nav.Link as={NavLink} to={routs.orders}>
               <img src={order} alt="Orders Icon" width='24px'
                 className={`${i18n.language !== 'ar' ? 'me-3' : 'ms-3'}`} />
               <p className="mb-0">{t('orders')}</p>

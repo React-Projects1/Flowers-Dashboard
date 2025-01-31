@@ -7,7 +7,7 @@ import Widget from '../../components/widget/Widget';
 import Line from '../../components/charts/line/Line';
 import Bar from '../../components/charts/bar/Bar';
 import Pie from '../../components/charts/pie/Pie';
-
+import { lineChartData } from '../../chartsData';
 
 const Home = () => {
     const { navbarHeight = 0 } = useContext(NavbarHeightContext);
@@ -25,7 +25,12 @@ const Home = () => {
                     <h3 className='mb-4'>Overview</h3>
                     <Widget />
                     <div className='row mt-3 d-flex justify-content-center align-items-center'>
-                        <div className='col-12 col-md-6'> <Line /> </div>
+                        <div className='col-12 col-md-6'>
+                            <Line
+                                title="Sales Growth"
+                                dataByDate={lineChartData}
+                                defaultDate="1-6/2024" />
+                        </div>
                         <div className='col-12 col-md-6'> <Bar /> </div>
                         <div className='col-12 col-md-6'> <Pie /> </div>
                     </div>

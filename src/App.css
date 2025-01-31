@@ -9,8 +9,10 @@
 
 :root {
     --main-color: #AB3333;
+    --main-color-hover: #b12d2ddc;
     --main-font-color: #453A3C;
     --secondary-font-color: #979797;
+    --third-font-color: #807A7A;
     --background-color: #E3E2E0;
     --background-hover-color: #ffffffd8;
     --border-color: #E3E2E0;
@@ -56,12 +58,30 @@ input {
     outline: none !important;
 
     &:focus {
-        border: 1px solid var(--border-color) !important;
+        border: 1px solid var(--border-color);
     }
 }
 
 input::placeholder {
     color: var(--placeholder-color) !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.modal {
+    .modal-content {
+        background-color: white !important;
+    }
+
+    .modal-footer {
+        .save {
+            background-color: var(--main-color) !important;
+            color: white !important;
+        }
+    }
+
 }
 
 

@@ -45,6 +45,10 @@ const Navbar = () => {
                 return t('reports');
             case '/users':
                 return t('users');
+            case '/orders':
+                return t('orders');
+            case '/reportsGraphLine':
+                return t('orders');
 
             default:
                 break;

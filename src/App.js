@@ -8,6 +8,9 @@ import Reports from './pages/reports/Reports';
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
 import Users from './pages/users/Users';
+import Orders from './pages/orders/Orders';
+import ReportsGraphLine from './pages/reportsGraphLine/ReportsGraphLine';
+import ReportsGraphBar from './pages/ReportsGraphBar/ReportsGraphBar';
 
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
             <Route path='test' element={<Test />} />
             <Route path='reports' element={<Reports />} />
             <Route path='users' element={<Users />} />
+            <Route path='orders' element={<Orders />} />
+            <Route path='reportsGraphLine' element={<ReportsGraphLine />} />
+            <Route path='reportsGraphBar' element={<ReportsGraphBar />} />
 
           </Route>
         </Routes>

@@ -1,4 +1,4 @@
-.dataGridTable {
+.table {
     border: 1px solid var(--border-color);
     border-radius: 5px;
 
@@ -11,9 +11,14 @@
 
     }
 
+    .MuiDataGrid-filler {
+        display: none !important;
+    }
+
     .MuiDataGrid-footerContainer {
         display: none !important;
     }
+
 
     .page-item {
         .page-link {
@@ -26,24 +31,29 @@
     .css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon {
         color: var(--main-color) !important;
     }
-    .MuiDataGrid-cell{
+
+    .MuiDataGrid-cell {
         border: none !important;
         outline: none !important;
     }
-    .actionBtn{
-        svg{
+
+    .actionBtn {
+        svg {
             cursor: pointer;
             transition: 0.3s;
         }
-        .edit{
-            &:hover{
+
+        .edit {
+            &:hover {
                 color: #0d50b4 !important;
             }
         }
-        .delete{
-            &:hover{
+
+        .delete {
+            &:hover {
                 color: #b42c39 !important;
             }
         }
     }
+
 }
