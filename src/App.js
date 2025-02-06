@@ -11,6 +11,7 @@ import Users from './pages/users/Users';
 import Orders from './pages/orders/Orders';
 import ReportsGraphLine from './pages/reportsGraphLine/ReportsGraphLine';
 import ReportsGraphBar from './pages/ReportsGraphBar/ReportsGraphBar';
+import Cart from './pages/cart/Cart';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path='orders' element={<Orders />} />
             <Route path='reportsGraphLine' element={<ReportsGraphLine />} />
             <Route path='reportsGraphBar' element={<ReportsGraphBar />} />
+            <Route path='cart' element={<Cart />} />
 
           </Route>
         </Routes>

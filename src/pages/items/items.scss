@@ -1,7 +1,6 @@
 .items {
 
     .content {
-        
         .addItem a {
             color: var(--main-color) !important;
             cursor: pointer;
@@ -59,6 +58,15 @@
                 }
             }
         }
-        
+
+       
+    }
+    .message {
+        position: absolute;
+        top: 2%;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: fit-content;
+        z-index: 5 !important;
     }
 }
